@@ -56,4 +56,51 @@
         });
     }
 
+    // 4. Toggle Thème (Clair/Sombre)
+    const themeToggle = document.getElementById('theme-toggle');
+    const currentTheme = localStorage.getItem('theme');
+
+    // Appliquer le thème sauvegardé
+    if (currentTheme === 'dark') {
+        document.body.classList.add('dark-theme');
+    }
+
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-theme');
+            
+            // Sauvegarder la préférence
+            let theme = 'light';
+            if (document.body.classList.contains('dark-theme')) {
+                theme = 'dark';
+            }
+            localStorage.setItem('theme', theme);
+        });
+    }
+
+    // 5. Révélation au Scroll (Intersection Observer)
+    const revealElements = document.querySelectorAll('.reveal');
+
+    if (revealElements.length > 0) {
+        const observerOptions = {
+            root: null,
+            threshold: 0.15,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    // Une fois affiché, pas besoin de ré-observer
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        revealElements.forEach(el => {
+            observer.observe(el);
+        });
+    }
+
 });

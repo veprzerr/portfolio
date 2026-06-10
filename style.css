@@ -735,6 +735,19 @@ body.dark-theme .form-group textarea:focus {
     font-weight: 500;
 }
 
+/* Animations de révélation */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+                transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* Responsiveness for all sections */
 @media (max-width: 768px) {
     .section {
