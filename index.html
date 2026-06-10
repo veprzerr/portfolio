@@ -62,6 +62,184 @@
         </div>
     </section>
 
+    <!-- Section À propos -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-info">
+                    <h2 class="section-title">À propos de moi</h2>
+                    <p>Actuellement en formation pour devenir développeur web, j'adore concevoir des interfaces web interactives, esthétiques et performantes. Curieux de nature, j'aime comprendre comment les choses fonctionnent sous le capot et relever des défis techniques.</p>
+                    <p>Mon parcours me permet d'acquérir de solides bases en développement front-end et back-end, tout en gardant une forte sensibilité pour l'expérience utilisateur (UX) et le design d'interfaces.</p>
+                </div>
+                <div class="about-visual">
+                    <div class="avatar-card">
+                        <div class="avatar-inner">
+                            <span class="avatar-initials">IS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <h2 class="section-title text-center">Mes Projets</h2>
+            
+            <!-- Filtres de projets -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="done">Fait</button>
+                <button class="filter-btn" data-filter="progress">En cours</button>
+                <button class="filter-btn" data-filter="planned">Envisagé</button>
+            </div>
+
+            <!-- Grille de projets -->
+            <div class="projects-grid">
+                <!-- Projet 1 -->
+                <div class="project-card" data-status="done">
+                    <div class="project-header">
+                        <span class="project-tag status-done">Fait</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Genève Apparel</h3>
+                        <p>Site e-commerce élégant pour une marque de vêtements fictive basée à Genève, avec panier interactif et filtres de recherche.</p>
+                    </div>
+                    <div class="project-footer">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JS</span>
+                    </div>
+                </div>
+
+                <!-- Projet 2 -->
+                <div class="project-card" data-status="done">
+                    <div class="project-header">
+                        <span class="project-tag status-done">Fait</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>RPG Combat System</h3>
+                        <p>Système de combat au tour par tour développé en JavaScript, avec gestion des statistiques, des sorts et d'un inventaire de combat.</p>
+                    </div>
+                    <div class="project-footer">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JS</span>
+                    </div>
+                </div>
+
+                <!-- Projet 3 -->
+                <div class="project-card" data-status="progress">
+                    <div class="project-header">
+                        <span class="project-tag status-progress">En cours</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>fit_kcal</h3>
+                        <p>Application de suivi de calories et de fitness permettant d'enregistrer ses repas et de suivre ses objectifs nutritionnels journaliers.</p>
+                    </div>
+                    <div class="project-footer">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JS</span>
+                    </div>
+                </div>
+
+                <!-- Projet 4 -->
+                <div class="project-card" data-status="planned">
+                    <div class="project-header">
+                        <span class="project-tag status-planned">Envisagé</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>IoT Supervision</h3>
+                        <p>Interface de supervision en temps réel développée lors d'un hackathon pour visualiser les données de capteurs d'humidité et de température.</p>
+                    </div>
+                    <div class="project-footer">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <h2 class="section-title text-center">Mes Compétences</h2>
+            
+            <div class="skills-grid">
+                <div class="skills-category">
+                    <h3>Frontend</h3>
+                    <ul class="skills-list">
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>Flexbox & Grid Layout</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+                
+                <div class="skills-category">
+                    <h3>Backend & Outils</h3>
+                    <ul class="skills-list">
+                        <li>Python</li>
+                        <li>Git & GitHub</li>
+                        <li>Figma (Design)</li>
+                        <li>VS Code</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2 class="section-title">Me Contacter</h2>
+                    <p>Un projet à réaliser, une question, ou simplement envie d'échanger ? N'hésitez pas à m'envoyer un message via le formulaire ou à me retrouver sur mes réseaux.</p>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/ismaili" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        </a>
+                        <a href="https://linkedin.com/in/ismail" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('Message envoyé ! (Simulation)');">
+                        <div class="form-group">
+                            <label for="name">Nom</label>
+                            <input type="text" id="name" name="name" required placeholder="Votre nom">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="votre@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Votre message..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Ismaïl. Tous droits réservés.</p>
+            <p>Fait avec passion et code propre.</p>
+        </div>
+    </footer>
+
     <!-- Script principal -->
     <script src="script.js"></script>
 </body>
