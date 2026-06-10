@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ismaïl | Portfolio Développeur</title>
+    <meta name="description" content="Portfolio de Ismaïl, développeur web junior. Découvrez mes projets, mes compétences et contactez-moi.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- En-tête / Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Ismaïl<span>.</span></a>
+            
+            <nav class="nav-links">
+                <a href="#about" class="nav-link">À propos</a>
+                <a href="#projects" class="nav-link">Projets</a>
+                <a href="#skills" class="nav-link">Compétences</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-btn" aria-label="Changer de thème">
+                    <!-- Sun icon -->
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+                    <!-- Moon icon -->
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+                </button>
+                
+                <button id="burger-menu" class="burger-btn" aria-label="Ouvrir le menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu Mobile -->
+    <div id="mobile-menu" class="mobile-nav">
+        <a href="#about" class="mobile-link">À propos</a>
+        <a href="#projects" class="mobile-link">Projets</a>
+        <a href="#skills" class="mobile-link">Compétences</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+
+    <!-- Section Héros -->
+    <section class="hero">
+        <div class="hero-container">
+            <span class="badge">Disponible pour vos projets</span>
+            <h1>Salut, moi c'est <span>Ismaïl</span></h1>
+            <p>Développeur web en formation. Passionné par le design épuré, les interfaces fluides et le code propre.</p>
+            <div class="hero-ctas">
+                <a href="#projects" class="btn btn-primary">Découvrir mes projets</a>
+                <a href="#contact" class="btn btn-secondary">Me contacter</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Script principal -->
+    <script src="script.js"></script>
+</body>
+</html>
