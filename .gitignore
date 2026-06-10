@@ -1,0 +1,8 @@
+﻿# Ignorer tous les fichiers et dossiers par defaut
+*
+
+# Sauf les fichiers du portfolio
+!index.html
+!style.css
+!script.js
+!.gitignore
